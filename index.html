@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="atm">
+        <div id="LoginScreen" class="screen">
+         <h1>ATM SYSTEM <h1>
+            <p>Enter your PIN:</p>
+            <input type="password" id="pinInput" placeholder="Enter PIN" maxlength="4">
+            <button onclick="login()">LOGIN</button>
+            <p id="LoginMessage"></p>
+            <small>Demo PIN: 1234</small>
+            </div>        
+            <div id="menuScreen" class="screen hidden">
+                <h1>ATM <MENU></h1>
+                    <div class="menu">
+                        <button onclick="showBalance()"$> Check Balance</button>
+                        <button onclick="withdraw()"-> Withdraw</button>
+                    <button onclick="deposit()"+>Deposit</button>
+                <button onclick="transfer()">Transfer</button>
+                <button onclick="ShowHistory()">Transaction History</button>
+                <button onclick="logout()">Logout</button>
+            
+                
+                    </div>
+                    <div id="output"></div>  
+                        </div>
+    </div> 
+</body>
+</html>
